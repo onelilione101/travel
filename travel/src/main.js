@@ -3,10 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import './assets/styles/reset.css'
-import './assets/styles/border.css'
+import fastClick from 'fastclick'
+import 'styles/reset.css'  //这里直接写styles是因为已经在webpack的配置项中 设置了简写
+import 'styles/border.css'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
+fastClick.attach(document.body)  //attach是fastclick自带的方法
 
 /* eslint-disable no-new */
 new Vue({
