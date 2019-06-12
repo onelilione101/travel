@@ -20,6 +20,12 @@ export default {
             swiperOption: {
                 pagination:'.swiper-pagination',
                 loop: true
+                // autoplay: {
+                //     delay:3000,
+                //     disableOnInteraction: false
+                // },
+
+                // speed:2800
             },
             swiperList: [{
                 id: '0001',
