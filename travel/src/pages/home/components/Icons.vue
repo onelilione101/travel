@@ -90,11 +90,11 @@ export default {
 @import  '~styles/varibles.styl'
 @import  '~styles/mixins.styl'
 
-  .icons >>> .swiper-container
+  .icons >>> .swiper-container            
     height: 0
     padding-bottom: 50%
-  .everyicon
-    position: relative
+  .everyicon                        //这部分的缩进不会很奇怪吗 everyicon明明是包在swiper-container里面的 但是这里却和它平级
+    position: relative              //而且swiper（写option的） 和 它的儿子swiper-slide之间 莫名出现两个div
     overflow: hidden
     float: left
     width: 25%
@@ -109,7 +109,8 @@ export default {
       .icon-img-content
         height:1rem
     .icon-text
-      font-size: .34rem
+      font-size: .3rem
+      letter-spacing: .03rem
       color: $darkTextColor
       ellipsis()
 
