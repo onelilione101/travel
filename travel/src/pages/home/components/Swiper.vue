@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
-    <swiper :options="swiperOption">
-    <swiper-slide v-for="item of swiperList" :key="item.id">
+    <swiper :options="swiperOption" v-if="showSwiper">
+    <swiper-slide v-for="item of list" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl">
     </swiper-slide>
     <!-- <swiper-slide><img class="swiper-img" src="~img/desert.png"></swiper-slide>    //!!!!!直接在标签里写src可以用我设的缩写 ~img，放到data里就行不通，会报错
@@ -15,31 +15,40 @@
 <script>
 export default {
     name:'HomeSwiper',
+    props: {
+        list: Array
+    },
     data () {
         return {
             swiperOption: {
                 pagination:'.swiper-pagination',
-                loop: true
+                loop: true,
+                autoplay: false
                 // autoplay: {
                 //     delay:3000,
                 //     disableOnInteraction: false
                 // },
 
                 // speed:2800
-            },
-            swiperList: [{
-                id: '0001',
-                imgUrl:require('../../../assets/img/desert.png')      //!!!!!   本地图片加个require，然后把img地址包起来就可以了
-            },{
-                id: '0002',
-                imgUrl:require('../../../assets/img/mountain.png')   
-            },{
-                id: '0003',
-                imgUrl:require('../../../assets/img/galaxy.png')    
-            }]
+            }
+         }
+        },
+            computed: {
+                showSwiper () {
+                  return this.list.length
+                }
+            }
+            // swiperList: [{
+            //     id: '0001',
+            //     imgUrl:require('../../../assets/img/desert.png')      //!!!!!   本地图片加个require，然后把img地址包起来就可以了
+            // },{
+            //     id: '0002',
+            //     imgUrl:require('../../../assets/img/mountain.png')   
+            // },{
+            //     id: '0003',
+            //     imgUrl:require('../../../assets/img/galaxy.png')    
+            // }]
         }
-    }
-}
 </script>
 
 <style lang="stylus" scoped>
@@ -55,5 +64,3 @@ export default {
       width: 100%
     
 </style>
-
-

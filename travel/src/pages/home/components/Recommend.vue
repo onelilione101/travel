@@ -2,7 +2,7 @@
 <div>
 <div class="title">热销推荐</div>
 <ul>
-    <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+    <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img :src="item.imgUrl" class="item-img">
         <div class="item-info">
             <p class="item-title">{{item.title}}</p>
@@ -17,26 +17,29 @@
 <script>
 export default {
     name:'HomeRecommend',
-    data () {
-        return {
-            recommendList:[{
-              id: '0001',
-              imgUrl: require('../../../assets/img/recommend/summer.png'), 
-              title: '夏季尖叫·水上达人',
-              text: '丰富海鲜大餐，水上尖叫狂欢'
-            }, {
-              id: '0002',
-              imgUrl: require('../../../assets/img/recommend/walking.png'), 
-              title: '吴越古道·山野逐溪',
-              text: '徒步吴越古道登浙西天池，穿越山林'
-            }, {
-              id: '0003',
-              imgUrl: require('../../../assets/img/recommend/island.png'), 
-              title: '小众海岛·中国圣托里尼之旅',
-              text: '只需一个周末，拥有海天一线的视觉盛宴'
-            } ]
-    }
- }
+    props: {
+        list: Array
+    },
+//     data () {
+//         return {
+//             recommendList:[{
+//               id: '0001',
+//               imgUrl: require('../../../assets/img/recommend/summer.png'), 
+//               title: '夏季尖叫·水上达人',
+//               text: '丰富海鲜大餐，水上尖叫狂欢'
+//             }, {
+//               id: '0002',
+//               imgUrl: require('../../../assets/img/recommend/walking.png'), 
+//               title: '吴越古道·山野逐溪',
+//               text: '徒步吴越古道登浙西天池，穿越山林'
+//             }, {
+//               id: '0003',
+//               imgUrl: require('../../../assets/img/recommend/island.png'), 
+//               title: '小众海岛·中国圣托里尼之旅',
+//               text: '只需一个周末，拥有海天一线的视觉盛宴'
+//             } ]
+//     }
+//  }
 }
 </script>
 

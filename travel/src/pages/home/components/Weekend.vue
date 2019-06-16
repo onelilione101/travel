@@ -2,7 +2,7 @@
 <div>
 <div class="title">周末去哪儿</div>
 <ul>
-    <li class="item border-bottom" v-for="item of weekendList" :key="item.id">
+    <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
         <img :src="item.imgUrl" class="item-img">
         </div>
@@ -18,26 +18,29 @@
 <script>
 export default {
     name:'HomeWeekend',
-    data () {
-        return {
-           weekendList:[{
-              id: '0001',
-              imgUrl: require('../../../assets/img/weekend/mountain.png'), 
-              title: '邂逅绝美武功山',
-              text: '徒步华东户外圣地'
-            }, {
-              id: '0002',
-              imgUrl: require('../../../assets/img/weekend/lake.png'), 
-              title: '千岛湖骑行',
-              text: '给自己一次挑战，一次敬畏的旅程'
-            }, {
-              id: '0003',
-              imgUrl: require('../../../assets/img/weekend/paraglider.png'), 
-              title: '翱翔大尖山',
-              text: '穿越云端，与太阳肩并肩'
-            } ]
-    }
- }
+    props: {
+        list: Array
+    },
+//     data () {
+//         return {
+//            weekendList:[{
+//               id: '0001',
+//               imgUrl: require('../../../assets/img/weekend/mountain.png'), 
+//               title: '邂逅绝美武功山',
+//               text: '徒步华东户外圣地'
+//             }, {
+//               id: '0002',
+//               imgUrl: require('../../../assets/img/weekend/lake.png'), 
+//               title: '千岛湖骑行',
+//               text: '给自己一次挑战，一次敬畏的旅程'
+//             }, {
+//               id: '0003',
+//               imgUrl: require('../../../assets/img/weekend/paraglider.png'), 
+//               title: '翱翔大尖山',
+//               text: '穿越云端，与太阳肩并肩'
+//             } ]
+//     }
+//  }
 }
 </script>
 

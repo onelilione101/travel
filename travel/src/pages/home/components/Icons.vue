@@ -23,56 +23,60 @@
 <script>
 export default {
     name:'HomeIcons',
+    props: {
+      list: Array
+    },
     data () {
         return {
             swiperOption: {
                 pagination:'.swiper-pagination',
-                loop: false
-            },
-            iconList: [{
-              id: '0001',
-              imgUrl: require('../../../assets/img/icons/飞机.png'),   
-              text: '特价机票'
-            }, {
-              id: '0002',
-              imgUrl: require('../../../assets/img/icons/出境.png'), 
-              text: '出境游'
-            }, {
-              id: '0003',
-              imgUrl: require('../../../assets/img/icons/定制.png'), 
-              text: '定制游'
-            }, {
-              id: '0004',
-              imgUrl: require('../../../assets/img/icons/轮船.png'), 
-              text: '邮轮游'
-            }, {
-              id: '0005',
-              imgUrl: require('../../../assets/img/icons/车票.png'), 
-              text: '特价车票'
-            }, {
-              id: '0006',
-              imgUrl: require('../../../assets/img/icons/一日游.png'), 
-              text: '一日游'
-            }, {
-              id: '0007',
-              imgUrl: require('../../../assets/img/icons/自由行.png'), 
-              text: '自由行'
-            }, {
-              id: '0008',
-              imgUrl: require('../../../assets/img/icons/自由行.png'), 
-              text: '攻略'
-            }, {
-              id: '0009',
-              imgUrl: require('../../../assets/img/icons/出境.png'), 
-              text: '出境游'
-            }
-            ]
-        }
+                autoplay: false
+                // loop: false
+           }
+        //     iconList: [{
+        //       id: '0001',
+        //       imgUrl: require('../../../assets/img/icons/飞机.png'),   
+        //       text: '特价机票'
+        //     }, {
+        //       id: '0002',
+        //       imgUrl: require('../../../assets/img/icons/出境.png'), 
+        //       text: '出境游'
+        //     }, {
+        //       id: '0003',
+        //       imgUrl: require('../../../assets/img/icons/定制.png'), 
+        //       text: '定制游'
+        //     }, {
+        //       id: '0004',
+        //       imgUrl: require('../../../assets/img/icons/轮船.png'), 
+        //       text: '邮轮游'
+        //     }, {
+        //       id: '0005',
+        //       imgUrl: require('../../../assets/img/icons/车票.png'), 
+        //       text: '特价车票'
+        //     }, {
+        //       id: '0006',
+        //       imgUrl: require('../../../assets/img/icons/一日游.png'), 
+        //       text: '一日游'
+        //     }, {
+        //       id: '0007',
+        //       imgUrl: require('../../../assets/img/icons/自由行.png'), 
+        //       text: '自由行'
+        //     }, {
+        //       id: '0008',
+        //       imgUrl: require('../../../assets/img/icons/攻略.png'), 
+        //       text: '攻略'
+        //     }, {
+        //       id: '0009',
+        //       imgUrl: require('../../../assets/img/icons/出境.png'), 
+        //       text: '出境游'
+        //     }
+        //     ]
+         }
     },
     computed: {
       pages () {
         const pages = []
-        this.iconList.forEach((item, index) => {
+        this.list.forEach((item, index) => {  
            const page = Math.floor(index/8)
            if(!pages[page]) {
              pages[page] =[]
