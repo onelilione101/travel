@@ -1,0 +1,85 @@
+{
+  "ret": true,
+  "data": {
+    "city": "杭州",
+    "swiperList": [{
+        "id": "0001",
+        "imgUrl": "/static/mock/img/desert.png"
+      },{
+        "id": "0002",
+        "imgUrl": "/static/mock/img/mountain.png"
+      },{
+        "id": "0003",
+        "imgUrl": "/static/mock/img/galaxy.png"
+      }],
+    "iconList": [{
+        "id": "0001",
+        "imgUrl": "/static/mock/img/icons/飞机.png",
+        "text": "特价机票"
+      }, {
+        "id": "0002",
+        "imgUrl": "/static/mock/img/icons/出境.png",
+        "text": "出境游"
+      }, {
+        "id": "0003",
+        "imgUrl": "/static/mock/img/icons/定制.png",
+        "text": "定制游"
+      }, {
+        "id": "0004",
+        "imgUrl": "/static/mock/img/icons/轮船.png",
+        "text": "邮轮游"
+      }, {
+        "id": "0005",
+        "imgUrl": "/static/mock/img/icons/车票.png",
+        "text": "特价车票"
+      }, {
+        "id": "0006",
+        "imgUrl": "/static/mock/img/icons/一日游.png",
+        "text": "一日游"
+      }, {
+        "id": "0007",
+        "imgUrl": "/static/mock/img/icons/自由行.png",
+        "text": "自由行"
+      }, {
+        "id": "0008",
+        "imgUrl": "/static/mock/img/icons/攻略.png",
+        "text": "攻略"
+      }, {
+        "id": "0009",
+        "imgUrl": "/static/mock/img/icons/出境.png",
+        "text": "出境游"
+      }],
+    "recommendList": [{
+        "id": "0001",
+        "imgUrl": "/static/mock/img/recommend/summer.png",
+        "title": "夏季尖叫·水上达人",
+        "text": "丰富海鲜大餐，水上尖叫狂欢"
+      }, {
+        "id": "0002",
+        "imgUrl": "/static/mock/img/recommend/walking.png",
+        "title": "吴越古道·山野逐溪",
+        "text": "徒步吴越古道登浙西天池，穿越山林"
+      }, {
+        "id": "0003",
+        "imgUrl": "/static/mock/img/recommend/island.png",
+        "title": "小众海岛·中国圣托里尼之旅",
+        "text": "只需一个周末，拥有海天一线的视觉盛宴"
+      }],
+    "weekendList": [{
+        "id": "0001",
+        "imgUrl": "/static/mock/img/weekend/mountain.png",
+        "title": "邂逅绝美武功山",
+        "text": "徒步华东户外圣地"
+      }, {
+        "id": "0002",
+        "imgUrl": "/static/mock/img/weekend/lake.png",
+        "title": "千岛湖骑行",
+        "text": "给自己一次挑战，一次敬畏的旅程"
+      }, {
+        "id": "0003",
+        "imgUrl": "/static/mock/img/weekend/paraglider.png",
+        "title": "翱翔大尖山",
+        "text": "穿越云端，与太阳肩并肩"
+      }]
+  }
+}
