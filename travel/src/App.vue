@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/dog.jpeg" width=50> -->
-    <router-view/>
+    <keep-alive exclude="Detail">
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
