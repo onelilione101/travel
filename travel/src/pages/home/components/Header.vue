@@ -7,7 +7,7 @@
         <span class="iconfont iconfangdajing"></span>
         输入城市/景点/游玩主题</div>
     <router-link to='/city'>
-        <div class="header-right">{{this.city}}
+        <div class="header-right">{{this.$store.state.city}}
             <span class="iconfont arrow-icon iconjiantouarrow486"></span>
         </div>
     </router-link>
@@ -17,9 +17,6 @@
 <script>
 export default {
   name: 'HomeHeader',
-  props: {
-      city: String
-  }
 }
 </script>
 
@@ -47,7 +44,8 @@ export default {
         border-radius: .1rem
         color: #ccc
     .header-right
-        width:1.24rem 
+        min-width:1.24rem       
+        padding: 0 0.1rem
         float: right
         text-align: center
         color: #000
