@@ -1,0 +1,15 @@
+{
+  "ret": true,
+  "data": {
+    "detailImg": [{
+        "id": "0001",
+        "imgUrl": "/static/mock/img/detail/mountain01.png"
+      },{
+        "id": "0002",
+        "imgUrl": "/static/mock/img/detail/mountain02.png"
+      },{
+        "id": "0003",
+        "imgUrl": "/static/mock/img/detail/mountain03.png"
+      }]
+    }
+}
