@@ -22,7 +22,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'   //在css中引入其他css 要用波浪线~
-.header
+  .header
     display: flex
     line-height: .86rem
     background: $bgColor

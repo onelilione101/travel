@@ -10,7 +10,7 @@
     <div class="swiper-pagination"  slot="pagination"></div>
   </swiper>
   </div>
-<common-gallery></common-gallery>
+<!-- <common-gallery></common-gallery> -->
 </div>
 </template>
 
