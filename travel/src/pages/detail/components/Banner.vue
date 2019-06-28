@@ -66,6 +66,8 @@ export default {
     padding-bottom: 56%
     background: #eee
     position: relative
+    .banner-img
+      width: 100%
     .swiper-pagination
       color: #fff
     .banner-img-number

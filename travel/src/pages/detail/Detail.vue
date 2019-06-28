@@ -2,7 +2,9 @@
 <div>
   <detail-banner :img="detailImg"></detail-banner>
   <detail-header></detail-header>
-  <div class="content"></div>
+  <div class="content">
+    <detail-list></detail-list>
+  </div>
 </div>
 </template>
 
@@ -10,11 +12,13 @@
 import axios from 'axios'
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
+import DetailList from './components/List'
 export default {
   name:'Detail',
   components: {
     DetailBanner,
-    DetailHeader
+    DetailHeader,
+    DetailList
   },
   props: {
       
